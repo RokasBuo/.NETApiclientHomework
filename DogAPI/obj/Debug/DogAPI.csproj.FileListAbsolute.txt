@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\DogAPI.exe.config
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\DogAPI.exe
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\DogAPI.pdb
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.Form1.resources
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.Properties.Resources.resources
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.csproj.GenerateResource.cache
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.exe
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.pdb
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\ApiClient.dll
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\ApiClient.pdb
+C:\Users\User\source\repos\DogAPIApp\DogAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\source\repos\DogAPIApp\DogAPI\obj\Debug\DogAPI.csproj.CopyComplete

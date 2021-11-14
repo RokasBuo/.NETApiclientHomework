@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\DogAPIApp\ApiClient\bin\Debug\ApiClient.dll
+C:\Users\User\source\repos\DogAPIApp\ApiClient\bin\Debug\ApiClient.pdb
+C:\Users\User\source\repos\DogAPIApp\ApiClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\DogAPIApp\ApiClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\source\repos\DogAPIApp\ApiClient\obj\Debug\ApiClient.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\DogAPIApp\ApiClient\obj\Debug\ApiClient.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DogAPIApp\ApiClient\obj\Debug\ApiClient.csproj.CopyComplete
+C:\Users\User\source\repos\DogAPIApp\ApiClient\obj\Debug\ApiClient.dll
+C:\Users\User\source\repos\DogAPIApp\ApiClient\obj\Debug\ApiClient.pdb
