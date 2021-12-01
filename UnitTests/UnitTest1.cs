@@ -6,10 +6,26 @@ using System;
 namespace UnitTests
 {
 
-    public interface ITestProvider
+    public interface ISubBreedsProvider
     {
-        BreedsResponse
+        SubBreedsResponse GetSubBreeds();
     }
+
+    class SubBreedsTestProvider: ISubBreedsProvider
+    {
+        public SubBreedsResponse subbreeds;
+        public SubBreedsResponse GetSubBreeds()
+        {
+            return subbreeds;
+
+        }
+    }
+
+    public class DogModel
+    {
+        public string Breed { get; set; }
+    }
+
 
     [TestClass]
     public class UnitTest1
@@ -19,8 +35,11 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod1()
         {
-            var tetsProv = new  
+            DogModel dog = new DogModel{
+                Breed = "Australian"
+            };
 
+            SubBreedsResponse subs = cache.GetSubBreeds(dog.Breed);
 
 
         }
