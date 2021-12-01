@@ -13,13 +13,25 @@ namespace ApiClient
 
         private static readonly string baseAddress = "https://dog.ceo/api/";
 
-        public static Response GetDogs()
+        public static BreedsResponse GetDogs()
         {
             using (HttpClient ApiClient = new HttpClient())
             {
             
                 string s = ApiClient.GetStringAsync(baseAddress + "breeds/list/all").Result;
-                var list = JsonConvert.DeserializeObject<Response>(s);
+                var list = JsonConvert.DeserializeObject<BreedsResponse>(s);
+
+                return list;
+            }
+        }
+
+        public static SubBreedsResponse GetSubBreeds(string breedname)
+        {
+            using (HttpClient ApiClient = new HttpClient())
+            {
+
+                string s = ApiClient.GetStringAsync(baseAddress + "breed/"+breedname+"/list").Result;
+                var list = JsonConvert.DeserializeObject<SubBreedsResponse>(s);
 
                 return list;
             }

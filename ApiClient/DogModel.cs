@@ -2,9 +2,14 @@
 
 namespace ApiClient
 {
-    public class Response
+    public class BreedsResponse
     {
         public Dictionary<string, List<string>> Message { get; set; } 
+    }
+
+    public class SubBreedsResponse
+    {
+        public List<string> Message { get; set; }
     }
 
     public class ImageResponse
