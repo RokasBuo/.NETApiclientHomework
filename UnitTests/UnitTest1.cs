@@ -1,31 +1,10 @@
 ﻿using ApiClient;
 using DogAPI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using System.Collections.Generic;
 
 namespace UnitTests
 {
-
-    public interface ISubBreedsProvider
-    {
-        SubBreedsResponse GetSubBreeds();
-    }
-
-    class SubBreedsTestProvider: ISubBreedsProvider
-    {
-        public SubBreedsResponse subbreeds;
-        public SubBreedsResponse GetSubBreeds()
-        {
-            return subbreeds;
-
-        }
-    }
-
-    public class DogModel
-    {
-        public string Breed { get; set; }
-    }
-
 
     [TestClass]
     public class UnitTest1
@@ -35,13 +14,24 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod1()
         {
-            DogModel dog = new DogModel{
-                Breed = "Australian"
+
+            List<string> subBreedName = new List<string> { "shepherd" };
+
+            SubBreedsResponse sub = new SubBreedsResponse
+            {
+                Message = subBreedName,
             };
 
-            SubBreedsResponse subs = cache.GetSubBreeds(dog.Breed);
+            string dog = "australian";
 
+            cache.addSubBreeds(dog, sub);
 
+            Assert.AreEqual(1, cache.known_subbreeds.Count);
+
+            SubBreedsResponse sub2 = cache.GetSubBreeds(dog);
+            Assert.AreEqual(1, cache.known_subbreeds.Count);
+
+            Assert.AreEqual(sub, cache.GetSubBreeds(dog));
         }
     }
 }

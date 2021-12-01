@@ -9,7 +9,7 @@ namespace DogAPI
 {
     public class SubBreedCache
     {
-        private Dictionary<string, SubBreedsResponse> known_subbreeds = new Dictionary<string, SubBreedsResponse>();
+        public Dictionary<string, SubBreedsResponse> known_subbreeds = new Dictionary<string, SubBreedsResponse>();
 
         public SubBreedsResponse GetSubBreeds(string breedname)
         {
@@ -18,9 +18,9 @@ namespace DogAPI
                 return known_subbreeds[breedname];
             }
 
-            SubBreedsResponse sub = (SubBreedsResponse)ApiHelper.GetSubBreeds(breedname);
+            SubBreedsResponse sub = ApiHelper.GetSubBreeds(breedname);
             addSubBreeds(breedname,sub);
-            return (SubBreedsResponse)sub;
+            return sub;
         }
         public Boolean addSubBreeds(string breedname, SubBreedsResponse subbreeds)
         {
@@ -28,7 +28,7 @@ namespace DogAPI
             {
                 return false;
             }
-            known_subbreeds[breedname] = (SubBreedsResponse)subbreeds;
+            known_subbreeds[breedname] = subbreeds;
             return true;
         }
     }
